@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Welcome</title>
+    <link rel="icon" href="favicon.ico">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img class="KV-Logo" src="KV-Logo.jpg" alt="">
+                    <a href="#">Resume</a>
+                </div>
+                <ul class="nav-items">
+                    <li>
+                        <a href="Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Skills.html">Skills</a>
+                    </li>
+                    <li>
+                        <a href="Cover-Letter.html">Cover Letter</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="wrapper">
+            <header>
+                <h1> Contact Me </h1>
+                <div class="hero-contant">
+                    <div id='map' style='width: 650px; height: 310px;'></div>
+                    <img class="" src="" alt="">
+                </div>
+                <div class="form-container">
+                    <form method="GET" id="form" action="forma.php">
+                        <div class="form-group">
+                            <label for="firstName">Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Email</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Massage</label>
+                            <textarea name="massage" id="massage" cols="30" rows="10"> </textarea>
+                        </div>
+                        <button type="submit">Submit</btn>
+                </form>
+        </header>
+    </div>
+</div>
+
+<div class="icons">
+  <img class="contacts" src="WhatsApp.png" alt="">
+  <p>WhatsApp Messenger: +37122090685</p>
+  <img class="contacts" src="E-mail.png" alt="">
+  <p>E-mail: krissvalgers@gmail.com</p>
+</div>
+
+<div class="main-container">
+    <h2 class="name-title"> Why people appreciate Me!  </h2>
+    <div class="wrapper">
+      <main>
+      <div class="last-title">
+        <div class="post-title1">
+          <img class="comment-img" src="Karl Fitzinger.png" alt="comments"> 
+          <p>Mr. Valgers is quick at learning, very dynamic, reliable, possitive and definitely</p>  
+            <p>hard-working. He is also passionate at work he does. He is always willing to</p> 
+          <p>take over new challanges and reesponsibilities..</p>  
+          </div>
+        <div class="post-excerpt1">
+                <p>Karl Fitzinger - Hotel Director</p>
+        </div>
+      </div>
+      <div class="last-title">
+        <div class="post-title1">
+          <img class="comment-img" src="Ricardo Gonzalez.png" alt="comments"> 
+            <p>Mr. Valgers is an accomplished performer and a valued team member,</p>  
+              <p>representingour brand with confidence. Always active participation in</p> 
+            <p>briefings and trainings. He has good communication skills. He never hesitates </p>  
+              <p>to take on additional responsibilities and shown initiative to learn.</p> 
+            </div>
+          <div class="post-excerpt1">
+                <p>Ricardo Gonzalez - Restaurant Manager</p>
+          </div>
+        </div>
+      <div class="last-title">
+        <div class="post-title1">
+          <img class="comment-img" src="Emanuel Groder.png" alt="comments">
+            <p>Mr. Valger`s natural and friendly cahracter and his accommodating attitude </p>  
+              <p>were highly appreciated by guests and employees alike. We would also like to</p> 
+            <p>emphasize his outstanding capabilities as pertains to communicating with our </p>  
+              <p>guests, mostly foreigners, as his unfailing possitive energy.</p>  
+            </div>
+          <div class="post-excerpt1">
+                <p>Emanuel Groder - Hotel Manager</p>        
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="footer">
+    <div class="wrapper">
+      <footer>
+        <div class="logo2">
+          <img class="KV-Logo" src="KV-Logo.jpg" alt="">
+          <a href="#">Resume</a>
+        </div>
+        <ul class="footer-items">
+          <li>
+            <a href="Home.html">Home</a>
+          </li>
+          <li>
+            <a href="Skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="Cover-Letter.html">Cover Letter</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact</a>
+          </li>
+        </ul>
+                        </footer>
+                </div>
+        </div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmx2Y2tzYXBoaXJlIiwiYSI6ImNramxwaWh0MzBkY3oyc3FlemE3YjZjcm0ifQ.wmQxpl6aRHVnECLmu_rE2Q';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                center: [24.140930, 56.961271], // starting position [lng, lat]
+                zoom: 10 // starting zoom
+            });
+
+            // Set options
+            var marker = new mapboxgl.Marker({
+                    color: "rgba(80, 93, 104, 1)",
+                    draggable: true
+                }).setLngLat([24.140930, 56.961271])
+                .addTo(map);
+        </script>
+
+        <script src="Contact.js"></script>
+</body>
+
+</html>

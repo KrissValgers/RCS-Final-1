@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    animation: transitionIn 0.75s;
+    font-family: "Zapf Calligraphic 801 TL";
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY();
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.nav-container {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: rgba(242, 245, 247, 1);
+    height: 72px;
+}
+
+.wrapper2 {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.nav-items li a {
+    color: rgba(66, 75, 90, 1);
+    font-size: 12px;
+    font-family: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.nav-items li a:hover {
+    transform: translateY(-8px)
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.logo a {
+    margin-left: 20px;
+    color: rgba(66, 75, 90, 1);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-family: normal;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner2 {
+    display: flex;
+    align-items: center;
+    background-image: url("triangle7.8.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    height: 800px;
+}
+
+span {
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateY(50px);
+    display: inline;
+}
+
+span.fade {
+    opacity: 2;
+    transform: translateY(0px);
+}
+
+.cover-image {
+    display: flex;
+    border: paleturquoise;
+    box-shadow: 10px 8px 8px rgb(12, 13, 14);
+    align-items: center;
+    justify-content: center;
+    background-image: url("banner2-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 580px;
+    margin-top: -300px;
+    margin-bottom: 320px;
+    margin-right: 410px;
+    margin-left: 120px;
+    border-radius: 12px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    text-shadow: 7px 5px 5px rgb(12, 13, 14);
+    color: rgba(242, 245, 247, 1);
+    width: 890px;
+    Height: 167px;
+    margin-bottom: 280px;
+    margin-top: 250px;
+    margin-left: 340px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background-image: url("triangle7.5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 784px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-image: url("triangle7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1380px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+h2 {
+    color: rgba(242, 245, 247, 1);
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 10px 8px 8px rgba(80, 93, 104, 1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(12, 13, 14);
+    text-shadow: 7px 5px 5px rgba(80, 93, 104, 1);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    width: 270px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.skills1-img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: paleturquoise;
+    box-shadow: 7px 5px 5px rgb(226, 242, 255);
+}
+
+.skills1-title {
+    display: flex;
+    flex-direction: column;
+    columns: repeat(autofit);
+    align-items: center;
+    height: 620px;
+    width: 305px;
+    margin: 20px;
+    padding: 20px;
+    border: paleturquoise;
+    box-shadow: 10px 8px 8px rgba(80, 93, 104, 1);
+    background-image: url(glass-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.skills1-title:hover {
+    transform: rotateY(-10deg);
+    background-color: rgba(242, 245, 247, 1);
+}
+
+.post-excerpt {
+    color: rgb(12, 13, 14);
+    text-shadow: 7px 5px 5px rgba(80, 93, 104, 1);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    mix-blend-mode: normal;
+    max-width: 270px;
+    text-align: center;
+    padding-top: 500px;
+    padding-bottom: 15px;
+    margin-top: -475px;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1920px;
+    height: 200px;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: rgba(242, 245, 247, 1);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-items li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.footer-items li a {
+    color: #505D68;
+    font-size: 12px;
+    display: flex;
+    flex-direction: space-around;
+    font-family: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+
+.footer-items li a:hover {
+    transform: translateY(-8px)
+}
+
+.logo2 a {
+    color: rgba(66, 75, 90, 1);
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    font-family: normal;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 200px;
+    z-index: 99;
+    border: none;
+    text-align: baseline;
+    outline: none;
+    background-color: rgba(66, 75, 90, 1);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: rgb(32, 107, 206);
+}
